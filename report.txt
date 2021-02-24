@@ -1,0 +1,26 @@
+Report template
+
+Basic Letter & Number(24): All test cases except btest0.txt give the correct output
+ 			   as per the result file. 	
+	Testcase 7: failed 
+	Testcase 8: pass
+	Testcase 10: pass
+	Testcase 11: pass
+	Testcase 12: pass
+	Testcase 13: pass
+	Testcase 14: pass
+	Testcase 15: pass
+
+Itermediate Letter & Number(30): Only itest0.txt and itest1.txt give correct output.
+				itest4.txt fails because there is an extra exclamation
+				point at the end of the word :(.
+	Testcase 16: pass
+	Testcase 17: pass
+	Testcase 18: failed
+	Testcase 19: failed
+	Testcase 20: failed
+
+Advanced Letter & Number (12): passing atest1.txt yields numbers in order as per aresult1.txt
+	Testcase 21 (6): failed
+	Testcase 22 (6): pass
+

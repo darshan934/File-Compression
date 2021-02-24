@@ -1,0 +1,20 @@
+Arguments: <Flag for choosing alg, file name >
+> Flags: 
+	> -i : insertion sort
+	> -1 : quick sort
+	> no flag: Fatal Error
+
+Given:
+> Input file has only ASCII
+> Data is comma separated
+> 
+
+Output: 
+> Sorted content to STDOUT
+> Each token on a new line
+
+Note: 
+> Use first element of data to sort as Pivot in QSort
+> No built in sorting functions, no strcmp
+> Check for input errors
+

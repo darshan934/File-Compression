@@ -1,0 +1,62 @@
+Prof. John-Austen Francisco
+Learn emacs
+
+
+Compiling with gcc:
+
+gcc test.c -> ./a.out //output name not specified
+gcc -o newcode test.c //output name is set to newcode
+
+Data types in C vs Java:
+V..exists in C/ X...does not exist in C
+> int ... V
+> char ... V
+> String ... X
+> boolean .. V
+> double ... V
+> float ... V
+> long ... V
+
+chars are always 1 byte long, ALWAYS. Every other datatype can be different.
+
+Strings do not exist in C because every data type in C is defined using 2 things: the format and the size. Both of these are known before running the program.
+This is not the case with String.
+
+Ersatz string: a char array that is  null terminated ('\0')
+
+
+Array declaration:
+
+> int array[5]; //declaration
+> int array[4] = {1, 2, 3, 4}; //specify elements
+> int array[] = {1, 2, 3, 4}; //you can leave out size of array if you specify elements
+> int array [4] = {1, 2, 3, 4, 5} //underspecify, it will work. Prof's metaphor for this: I did not put on my seatbelt but nothing hit me.
+> printing 5 elements from an array of size 4 displays strange behavior. Remember, C is a memory oriented language: This means that
+  if you go beyond the length of the array it will access the memory location and return the value stored in that location.
+
+Printing
+> printf("hello");
+> printf("hello\n");
+> printf("?: %d");
+
+String as char arrays
+> char array[5] = {'h', 'e', 'y'}; //this is not a string since it is not null terminated
+> char array[5] = {'h', 'e', 'y', '\0'}; //this is a string
+> char array[] = "hello";
+> printf("%s", array) //prints String
+
+
+Booleans:
+> 0 is false
+> everything else is true. EVERYTHING.
+
+Enum:
+> to crete your own true and false:
+> enum boolean {true, false}; // creating this will make true have integer value of 0 and false will have value 1.
+> the correct way to write it is: enum boolean {true = 1, false = 0};
+> enum boolean truthVal = true; // now truthVal = 1
+
+Struct:
+> struct stuff {int a; char b; short c;}
+> struct stuff example;
+> example.b = 'a' // this accesses the char in the struct
